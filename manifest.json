@@ -1,0 +1,16 @@
+{
+   "description": "Chrome extension for lobste.rs.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+	 "manifest_version": 2,
+   "name": "Lobster",
+   "version": "1.0.0",
+   "content_scripts": [
+      {
+         "matches": [ "https://lobste.rs/*", "http://lobste.rs/*" ],
+         "js": ["ext.js"],
+				 "run_at": "document_end"
+      }
+    ]
+}
